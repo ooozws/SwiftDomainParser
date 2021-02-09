@@ -31,8 +31,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.swift_versions = '5.0'
 
-  s.source_files = 'DomainParser/DomainParser/**/*'
+  s.source_files = 'DomainParser/DomainParser/**/*.swift'
   s.exclude_files = "DomainParser/DomainParser/*.plist"
+  s.resources = "DomainParser/DomainParser/Resources/public_suffix_list.dat"
   
   # s.resource_bundles = {
   #   'DomainParser' => ['DomainParser/Assets/*.png']
